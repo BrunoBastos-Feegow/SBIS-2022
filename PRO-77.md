@@ -1,6 +1,6 @@
 ## [PRO-77 [SBIS] ECF.01.03 - Criar button para Ativar e Inativar Locais de Atendimento](https://feegow.atlassian.net/browse/PRO-77)
 
-- [PR com ajustes no código](https://github.com/feegow/feegowclinic-v7/pull/2859)
+- [PR com ajustes no código **MERGED TO SBIS**](https://github.com/feegow/feegowclinic-v7/pull/2859)
 
 CLINIC-######:
 =====
