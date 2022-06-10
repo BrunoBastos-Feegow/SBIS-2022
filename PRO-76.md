@@ -1,6 +1,6 @@
 ## [PRO-76-sbis-ecf-01-02-criar-configuracao-para-cnes-duplicados-e-validacao](https://feegow.atlassian.net/browse/PRO-76)
 
-- [PR com ajustes no código](https://github.com/feegow/feegowclinic-v7/pull/2863)
+- [PR com ajustes no código **MERGED TO SBIS**](https://github.com/feegow/feegowclinic-v7/pull/2863)
 
 CLINICCENTRAL 
 =====
