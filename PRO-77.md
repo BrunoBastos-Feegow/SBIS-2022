@@ -90,7 +90,7 @@ UPDATE `sys_resourcesfields` SET `showInList`='0' WHERE  `resourceID` = 27 AND `
 ```
 
 - Atualiza query para exibição do nome da Unidade nas listagens já que o nome fantasia passa a ser opcional
-> NÃO EXECUTAR: Mudou este requisito e nome fantasia permaneceu obrigatório
+> **NÃO EXECUTAR:** Mudou este requisito e nome fantasia permaneceu obrigatório
 ```
 -- UPDATE `sys_resourcesfields` SET `showInList`='0' WHERE  `resourceID` = 27 AND `columnName` = 'Ativo';
 -- "select id, NomeFantasia, sysActive FROM (select id, IF(NomeFantasia, NomeFantasia, UnitName) AS NomeFantasia, sysActive from sys_financialcompanyunits UNION ALL select '0', IF(NomeFantasia, NomeFantasia, NomeEmpresa) AS NomeFantasia, sysActive from empresa order by id)t where sysActive=1"
