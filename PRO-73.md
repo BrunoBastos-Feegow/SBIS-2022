@@ -9,7 +9,7 @@
 - As PRs com as queries já foram aceitas em produção. As queries nesta documentação podem ser executadas novamente pois
   farão a verificação antes de alterar qualquer coisa no banco.
 
-CLINIC-######:
+CLINIC-#####
 =====
 
 - Cria coluna TipoPessoa na tabela empresa caso não exista:
@@ -52,7 +52,7 @@ DEALLOCATE PREPARE stmt;
 ```
 
 
-CLINIC-CENTRAL:
+CLINIC-CENTRAL
 =====
 
 - Tabela para controlar tipos de estabelecimentos e permitir distinguir entre pessoa física e jurídica
