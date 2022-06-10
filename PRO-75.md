@@ -93,31 +93,25 @@ CLINICCENTRAL
 ```
 INSERT INTO `sys_resourcesfields` (`resourceID`, `label`, `columnName`, `fieldTypeID`, `rowNumber`, `selectSQL`, `selectColumnToShow`, `size`)
 SELECT '13', 'Responsável Técnico', 'ResponsavelMedico', '3', '1', 'select * from profissionais', 'NomeProfissional', '4'
-FROM `sys_resourcesfields`
-WHERE `resourceID` = 13 AND `columnName` = 'ResponsavelMedico'
-HAVING COUNT(*) = 0;
-```
+    FROM `sys_resourcesfields`
+    WHERE `resourceID` = 13 AND `columnName` = 'ResponsavelMedico'
+    HAVING COUNT(*) = 0;
 
-```
 INSERT INTO `sys_resourcesfields` (`resourceID`, `label`, `columnName`, `fieldTypeID`, `rowNumber`, `selectSQL`, `selectColumnToShow`, `size`)
 SELECT '13', 'Responsável Odontológico', 'ResponsavelOdontologico', '3', '1', 'select * from profissionais', 'NomeProfissional', '4'
-FROM `sys_resourcesfields`
-WHERE `resourceID` = 13 AND `columnName` = 'ResponsavelOdontologico'
-HAVING COUNT(*) = 0;
-```
+    FROM `sys_resourcesfields`
+    WHERE `resourceID` = 13 AND `columnName` = 'ResponsavelOdontologico'
+    HAVING COUNT(*) = 0;
 
-```
 INSERT INTO `sys_resourcesfields` (`resourceID`, `label`, `columnName`, `fieldTypeID`, `rowNumber`, `selectSQL`, `selectColumnToShow`, `size`)
 SELECT '37', 'Responsável Técnico', 'ResponsavelMedico', '3', '1', 'select * from profissionais', 'NomeProfissional', '4'  
-FROM `sys_resourcesfields`
-WHERE `resourceID` = 37 AND `columnName` = 'ResponsavelMedico'
-HAVING COUNT(*) = 0;
-```
+    FROM `sys_resourcesfields`
+    WHERE `resourceID` = 37 AND `columnName` = 'ResponsavelMedico'
+    HAVING COUNT(*) = 0;
 
-```
 INSERT INTO `sys_resourcesfields` (`resourceID`, `label`, `columnName`, `fieldTypeID`, `rowNumber`, `selectSQL`, `selectColumnToShow`, `size`)
 SELECT '37', 'Responsável Odontológico', 'ResponsavelOdontologico', '3', '1', 'select * from profissionais', 'NomeProfissional', '4'  
-FROM `sys_resourcesfields`
-WHERE `resourceID` = 37 AND `columnName` = 'ResponsavelOdontologico'
-HAVING COUNT(*) = 0;
+    FROM `sys_resourcesfields`
+    WHERE `resourceID` = 37 AND `columnName` = 'ResponsavelOdontologico'
+    HAVING COUNT(*) = 0;
 ```
