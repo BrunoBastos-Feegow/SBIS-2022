@@ -1,6 +1,6 @@
 ## [[SBIS] ECF.01.01 - Cadastro de Empresa/Unidade - Select de Tipo de estabelecimento de saúde](https://feegow.atlassian.net/browse/PRO-73)
 
-- [PR com ajustes no código](https://github.com/feegow/sql_statements/pull/135)
+- [PR COM AJUSTES NO CÓDIGO - **MERGED TO SBIS**](https://github.com/feegow/feegowclinic-v7/pull/2855)
 
 - Queries para ajustes no banco da licença:
 - Cria coluna TipoPessoa na tabela empresa caso não exista:
