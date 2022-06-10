@@ -33,3 +33,34 @@ AND column_name = 'ResponsavelOdontologico'
 PREPARE stmt FROM @tmpSt;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
+
+- Cria coluna ResponsavelMedico na tabela sys_financialcompanyunits caso não exista:
+> SET @tmpSt = (SELECT IF(
+(SELECT COUNT(*)
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_name = 'sys_financialcompanyunits'
+AND table_schema = DATABASE()
+AND column_name = 'ResponsavelMedico'
+) > 0,
+"SELECT 1",
+"ALTER TABLE sys_financialcompanyunits ADD ResponsavelMedico INT(11) NULL DEFAULT NULL"
+));
+PREPARE stmt FROM @tmpSt;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+
+
+- Cria coluna ResponsavelOdontologico na tabela sys_financialcompanyunits caso não exista:
+> SET @tmpSt = (SELECT IF(
+(SELECT COUNT(*)
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_name = 'sys_financialcompanyunits'
+AND table_schema = DATABASE()
+AND column_name = 'ResponsavelOdontologico'
+) > 0,
+"SELECT 1",
+"ALTER TABLE sys_financialcompanyunits ADD ResponsavelOdontologico INT(11) NULL DEFAULT NULL"
+));
+PREPARE stmt FROM @tmpSt;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
