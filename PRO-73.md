@@ -21,16 +21,15 @@
 
 - Cria coluna CPF na tabela empresa caso não exista:
 > SET @tmpSt = (SELECT IF(
-(SELECT COUNT(*)
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE table_name = 'empresa'
-AND table_schema = DATABASE()
-AND column_name = 'CPF'
-) > 0,
-"SELECT 1",
-"ALTER TABLE empresa ADD CPF VARCHAR(50) NULL DEFAULT NULL"
-));
-PREPARE stmt FROM @tmpSt;
-EXECUTE stmt;
-DEALLOCATE PREPARE stmt;
-``
+ (SELECT COUNT(*)
+  FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE table_name = 'empresa'
+      AND table_schema = DATABASE()
+      AND column_name = 'CPF'
+ ) > 0,
+  "SELECT 1",
+  "ALTER TABLE empresa ADD CPF VARCHAR(50) NULL DEFAULT NULL"
+ ));
+ PREPARE stmt FROM @tmpSt;
+ EXECUTE stmt;
+ DEALLOCATE PREPARE stmt;
