@@ -53,7 +53,7 @@ SET @tmpSt = (
                 AND table_schema = DATABASE() 
                 AND index_name LIKE 'Ativo'
         ) > 0,
-        "SELECT '---coluna já existe-'", 
+        "SELECT '---indice já existe-'", 
         "ALTER TABLE `locais` ADD INDEX `Ativo` (`Ativo`)"
     )
 );
